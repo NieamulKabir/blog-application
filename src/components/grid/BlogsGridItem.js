@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+
 const BlogsGridItem = ({ blog }) => {
     const { id, image, title, createdAt, likes, tags, isSaved } = blog;
+
     return (
         <div className="lws-card">
             <Link to={`blogs/${id}`}>
@@ -14,6 +17,7 @@ const BlogsGridItem = ({ blog }) => {
                         {createdAt}
                     </p>
                     <p className="lws-likeCount"><i className="fa-regular fa-thumbs-up"></i>
+                    
                         {likes}
                     </p>
                 </div>

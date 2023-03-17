@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchBlog, updateBlog } from '../../features/blog/blogSlice';
+import {  updateBlog } from '../../features/blog/blogSlice';
 
 const BlogDetails = ({ blog }) => {
     const dispatch = useDispatch()
