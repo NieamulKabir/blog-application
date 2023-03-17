@@ -1,40 +1,33 @@
 import React from 'react';
-import img from '../../assets/images/git.webp'
-const RelatedBlogsItem = () => {
+import { Link } from 'react-router-dom';
+
+const RelatedBlogsItem = ({ blog }) => {
+    const { id, image, title, tags ,createdAt} = blog;
     return (
-        <div className="space-y-4 related-post-container">
+        
 
             <div className="card">
-                <a href="post.html">
-                    <img src={img} className="card-image" alt="" />
-                </a>
+                <Link to={`/blogs/${id}`}>
+                    <img src={image} className="card-image" alt={title} />
+                </Link>
                 <div className="p-4">
-                    <a href="post.html" className="text-lg post-title lws-RelatedPostTitle">
-                        Top Github Alternatives
-                    </a>
+                    <Link to={`/blogs/${id}`} className="text-lg post-title lws-RelatedPostTitle">
+                        {title}
+                    </Link>
                     <div className="mb-0 tags">
-                        <span>#python,</span> <span>#tech,</span> <span>#git</span>
+                        {
+                            tags.map((tag) => (
+                                <span key={tag}>#{tag},</span>
+                            ))
+                        }
+                        
                     </div>
-                    <p>2010-03-27</p>
+                    <p>{createdAt}</p>
                 </div>
             </div>
 
-            <div className="card">
-                <a href="post.html">
-                    <img src="./images/ai.jpg" className="card-image" alt="" />
-                </a>
-                <div className="p-4">
-                    <a href="post.html" className="text-lg post-title lws-RelatedPostTitle">
-                        The future of Artificial Inteligence
-                    </a>
-                    <div className="mb-0 tags">
-                        <span>#python,</span> <span>#tech,</span> <span>#git</span>
-                    </div>
-                    <p>2020-07-15</p>
-                </div>
-            </div>
 
-        </div>
+
     );
 };
 

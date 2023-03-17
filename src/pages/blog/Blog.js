@@ -17,7 +17,7 @@ const Blog = () => {
         dispatch(fetchBlog(blogId))
     }, [blogId, dispatch])
 
-    const { id, link, title, tags } = blog || {}
+    const { id,tags } = blog || {}
 
     let content = null;
     if (isLoading) content = <Loading />
