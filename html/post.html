@@ -15,49 +15,51 @@
 
 <body>
   <!-- navbar start  -->
-  <nav class="py-4 border-b">
-    <div class="navbar-container">
+  <nav className="py-4 border-b">
+    <div className="navbar-container">
       <!-- logo -->
-      <div class="logo">
+      <div className="logo">
         <img src="./images/LWSBlog.svg" alt="search" />
       </div>
 
       <!-- auth buttons , This will nonfunctional, just for nice looking -->
-      <div class="auth-buttons">
-        <button class="btn btn-primary">sign in</button>
-        <button class="btn btn-outline">sign up</button>
+      <div className="auth-buttons">
+        <button className="btn btn-primary">sign in</button>
+        <button className="btn btn-outline">sign up</button>
       </div>
     </div>
   </nav>
   <!-- navbar end  -->
   <!-- Go Home / Go Back -->
-  <div class="container mt-8">
-    <a href="index.html" class="inline-block text-gray-600 home-btn" id="lws-goHome"><i
-        class="mr-2 fa-solid fa-house"></i>Go Home</a>
+  <div className="container mt-8">
+    <a href="index.html" className="inline-block text-gray-600 home-btn" id="lws-goHome"><i
+        className="mr-2 fa-solid fa-house"></i>Go Home</a>
   </div>
-  <section class="post-page-container">
+
+
+  <section className="post-page-container">
     <!-- detailed post  -->
-    <main class="post">
-      <img src="./images/mern.webp" alt="githum" class="w-full rounded-md" id="lws-megaThumb" />
+    <main className="post">
+      <img src="./images/mern.webp" alt="githum" className="w-full rounded-md" id="lws-megaThumb" />
       <div>
-        <h1 class="mt-6 text-2xl post-title" id="lws-singleTitle">
+        <h1 className="mt-6 text-2xl post-title" id="lws-singleTitle">
           MERN stack for Web Development
         </h1>
-        <div class="tags" id="lws-singleTags">
+        <div className="tags" id="lws-singleTags">
           <span>#python,</span> <span>#tech,</span> <span>#git</span>
         </div>
-        <div class="btn-group">
+        <div className="btn-group">
           <!-- handle like on button click -->
-          <button class="like-btn" id="lws-singleLinks">
-            <i class="fa-regular fa-thumbs-up"></i> 100
+          <button className="like-btn" id="lws-singleLinks">
+            <i className="fa-regular fa-thumbs-up"></i> 100
           </button>
           <!-- handle save on button click -->
           <!-- use ".active" class and "Saved" text  if a post is saved, other wise "Save" -->
-          <button class="active save-btn" id="lws-singleSavedBtn">
-            <i class="fa-regular fa-bookmark"></i> Saved
+          <button className="active save-btn" id="lws-singleSavedBtn">
+            <i className="fa-regular fa-bookmark"></i> Saved
           </button>
         </div>
-        <div class="mt-6">
+        <div className="mt-6">
           <p>
             A MERN stack comprises a collection of four frameworks (MongoDB,
             ExpressJs, ReactJs and NodeJs) used to develop full-stack
@@ -73,18 +75,18 @@
     <!-- detailed post ends -->
     <!-- related posts -->
     <aside>
-      <h4 class="mb-4 text-xl font-medium" id="lws-relatedPosts">Related Posts</h4>
-      <div class="space-y-4 related-post-container">
+      <h4 className="mb-4 text-xl font-medium" id="lws-relatedPosts">Related Posts</h4>
+      <div className="space-y-4 related-post-container">
         <!-- related post  -->
-        <div class="card">
+        <div className="card">
           <a href="post.html">
-            <img src="./images/git.webp" class="card-image" alt="" />
+            <img src="./images/git.webp" className="card-image" alt="" />
           </a>
-          <div class="p-4">
-            <a href="post.html" class="text-lg post-title lws-RelatedPostTitle">
+          <div className="p-4">
+            <a href="post.html" className="text-lg post-title lws-RelatedPostTitle">
               Top Github Alternatives
             </a>
-            <div class="mb-0 tags">
+            <div className="mb-0 tags">
               <span>#python,</span> <span>#tech,</span> <span>#git</span>
             </div>
             <p>2010-03-27</p>
@@ -92,15 +94,15 @@
         </div>
         <!-- related post ends -->
         <!-- related post  -->
-        <div class="card">
+        <div className="card">
           <a href="post.html">
-            <img src="./images/ai.jpg" class="card-image" alt="" />
+            <img src="./images/ai.jpg" className="card-image" alt="" />
           </a>
-          <div class="p-4">
-            <a href="post.html" class="text-lg post-title lws-RelatedPostTitle">
+          <div className="p-4">
+            <a href="post.html" className="text-lg post-title lws-RelatedPostTitle">
               The future of Artificial Inteligence
             </a>
-            <div class="mb-0 tags">
+            <div className="mb-0 tags">
               <span>#python,</span> <span>#tech,</span> <span>#git</span>
             </div>
             <p>2020-07-15</p>
