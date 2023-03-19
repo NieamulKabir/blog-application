@@ -26,7 +26,6 @@ const BlogDetails = ({ blog }) => {
                             <span key={tag}>#{tag}</span>
                         ))
                     }
-
                 </div>
                 <div className="btn-group">
 
@@ -36,8 +35,6 @@ const BlogDetails = ({ blog }) => {
                     >
                         <i className="fa-regular fa-thumbs-up"></i> {likes}
                     </button>
-
-
 
                     <button
                         onClick={handleSave}
